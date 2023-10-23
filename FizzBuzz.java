@@ -1,26 +1,20 @@
 
 public class FizzBuzz {
 
-    public void run() {
-        int i = 0;
-        int n = 100;
-        while (i<=100) {
-            System.out.println(i++);
-        }
-        if (n%3 ==0) {
+    public static String fizzbuzz(final int number) {
+        int i =100;
+        if (number / 15 * 15 == number) {
+            System.out.println("FizzBuzz");
+        } else if (number / 5 * 5 == number) {
+            System.out.println("Buzz");
+        } else if (number / 3 * 3 == number) {
             System.out.println("Fizz");
         }
-        if (i % 5 ==0) {
-            System.out.println("Buzz");
+        return Integer.toString(i);
         }
-        if (i % 15 ==0) {
-            System.out.println("FizzBuzz");
-        }
-    }
 
     public static void main(String[] args)
     {
         FizzBuzz hw = new FizzBuzz();
-        hw.run();
     }
 }
