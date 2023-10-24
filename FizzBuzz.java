@@ -1,20 +1,17 @@
 
 public class FizzBuzz {
-
-    public static String fizzbuzz(final int number) {
-        int i =100;
-        if (number / 15 * 15 == number) {
+    
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++)
+            System.out.println("i++"); 
+            if (i / 15 * 15 == i) {
             System.out.println("FizzBuzz");
-        } else if (number / 5 * 5 == number) {
+        
+        } else if (i / 5 * 5 == i) {
             System.out.println("Buzz");
-        } else if (number / 3 * 3 == number) {
+        
+        } else if (i / 3 * 3 == i) {
             System.out.println("Fizz");
+        } 
         }
-        return Integer.toString(i);
-        }
-
-    public static void main(String[] args)
-    {
-        FizzBuzz hw = new FizzBuzz();
     }
-}
